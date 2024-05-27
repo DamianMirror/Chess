@@ -1,0 +1,32 @@
+#gameboard {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.square {
+    width: 12.5%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.square svg{
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+}
+
+.biege {
+    background-color: #f0d9b5;
+}
+
+.brown {
+    background-color: #a97951;
+}
+
