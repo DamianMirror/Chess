@@ -3,7 +3,9 @@
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgb(67, 59, 59);
+    position: relative;
+    z-index: 4;
 }
 
 .square {
@@ -13,23 +15,39 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    position: relative;
+    z-index: -20;
 }
 
-.square .piece {
+.piece {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 10;
 }
 
-.square .piece svg {
+.piece svg {
+    pointer-events: none;
     width: 90%;
     height: 90%;
     max-width: 100%;
     max-height: 100%;
     display: block;
+    position: relative;
+    z-index: 1;
 }
+
+path {
+    pointer-events: none;
+    position: relative;
+    z-index: -10;
+}
+
+
+
 
 .biege {
     background-color: #f0d9b5;
@@ -39,11 +57,10 @@
     background-color: #a97951;
 }
 
-.player1-color {
-    fill: #050505;
+.black {
+    fill: #341414;
 }
 
-.player2-color {
-    fill: #e4d7c1;
+.white {
+    fill: #242e56;
 }
-
